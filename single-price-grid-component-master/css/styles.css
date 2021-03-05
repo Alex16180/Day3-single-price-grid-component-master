@@ -1,0 +1,131 @@
+:root {
+  --verde: hsl(179, 60%, 44%);
+  --verdeclaro: #4abfbd;
+  --amarillo: hsl(71, 73%, 54%);
+  --gris: hsl(218, 22%, 67%);
+  --grisclaro: hsl(204, 43%, 93%);
+}
+
+body {
+  font-size: 16px;
+  font-family: "Karla", sans-serif;
+  background-color: var(--grisclaro);
+  padding: 4rem 1.3rem;
+}
+
+.main {
+  display: grid;
+}
+
+.box {
+  padding: 25px;
+}
+
+/* TODO Primera tarjeta */
+.box--white {
+  background-color: white;
+}
+
+.box__title {
+  color: var(--verde);
+  font-weight: 700;
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.box__subtitle {
+  color: var(--amarillo);
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-top: 30px;
+  line-height: 1.5;
+}
+
+.box__text {
+  color: var(--gris);
+  line-height: 1.7;
+  font-size: 0.85rem;
+}
+
+.box:first-child {
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+}
+
+/* TODO Segunda tarjeta */
+.box--green {
+  background-color: var(--verde);
+}
+
+.box__title--white {
+  margin: 0;
+  color: var(--grisclaro);
+  font-size: 1.2rem;
+}
+
+.box__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.box__currency {
+  color: var(--grisclaro);
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.box__currency::before {
+  content: "$";
+}
+
+.box__periodicity {
+  color: rgb(183, 220, 221);
+  margin-left: 16px;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.box__subtitle--white {
+  color: var(--grisclaro);
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.box__button {
+  color: var(--grisclaro);
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  background-color: var(--amarillo);
+  padding: 16px 0;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 6px 25px rgb(58, 136, 132);
+  box-shadow: 0 6px 25px rgb(58, 136, 132);
+  margin-top: 35px;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+/* TODO Tercera tarjeta */
+.box--greenlight {
+  background-color: var(--verdeclaro);
+}
+
+.list {
+  list-style-type: none;
+  color: rgb(183, 220, 221);
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.box:last-child {
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+}
